@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./pictures/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem;
+}
+
+
+/*mobile*/
+
+@media only screen and (min-width: 375px) {
+    .container_1 {
+        width: 100%;
+    }
+}
+
+
+/*desktop*/
+
+.container_1 {
+    width: 450px;
+    height: 700px;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_1 .img_hero {
+    border-radius: 1rem 1rem 0 0;
+    position: absolute;
+    top: 15rem;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.info h1 {
+    margin-top: 15rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.info p {
+    color: hsl(224, 23%, 55%);
+}
+
+.annual_plan {
+    background-color: hsl(225, 100%, 98%);
+    width: 350px;
+    height: 75px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.annual_plan img {
+    margin-left: 1rem;
+}
+
+.annual_plan p {
+    margin-right: 1rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 750;
+}
+
+.annual_plan p:hover {
+    color: hsl(245, 75%, 70%);
+    cursor: pointer;
+}
+
+.annual_plan span {
+    color: hsl(224, 23%, 55%);
+}
+
+div>h1 {
+    margin-top: 10rem;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 800;
+    font-size: smaller;
+    width: 350px;
+    height: 50px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 0px 20px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.proceed:hover {
+    background-color: hsl(245, 75%, 70%);
+    cursor: pointer;
+}
+
+.cancel p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.cancel p:hover {
+    color: hsl(224, 23%, 30%);
+    cursor: pointer;
+}
