@@ -22,9 +22,13 @@ body {
 
 /*mobile*/
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) {
     .container_1 {
         width: 100%;
+    }
+    .img_hero {
+        width: 100%;
+        height: auto;
     }
 }
 
