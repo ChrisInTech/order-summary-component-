@@ -20,19 +20,6 @@ body {
 }
 
 
-/*mobile*/
-
-@media only screen and (min-width: 768px) {
-    .container_1 {
-        width: 100%;
-    }
-    .img_hero {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
 /*desktop*/
 
 .container_1 {
@@ -46,10 +33,12 @@ body {
     align-items: center;
 }
 
-.container_1 .img_hero {
+.img_hero {
     border-radius: 1rem 1rem 0 0;
     position: absolute;
     top: 15rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .info {
@@ -145,4 +134,10 @@ div>h1 {
 .cancel p:hover {
     color: hsl(224, 23%, 30%);
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .container_1 {
+        width: 450px;
+    }
 }
