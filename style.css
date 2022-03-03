@@ -135,9 +135,3 @@ div>h1 {
     color: hsl(224, 23%, 30%);
     cursor: pointer;
 }
-
-@media only screen and (min-width: 768px) {
-    .container_1 {
-        width: 450px;
-    }
-}
